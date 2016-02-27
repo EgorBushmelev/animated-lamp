@@ -41,7 +41,8 @@ class autoschools {
 
     private static function modify_field($id, $field, $value){
         $db = JFactory::getDBO();
-        $query = "UPDATE autoschools SET $field=\"$value\" WHERE id=$id";
+        $validated = validate($value);
+        $query = "UPDATE autoschools SET $field=\"$validated\" WHERE id=$id";
         $db->setQuery($query);
         $db->query();
         if(!$db->query()) {
@@ -53,7 +54,8 @@ class autoschools {
 
     private static function modify_int_field($id, $field, $value){
         $db = JFactory::getDBO();
-        $query = "UPDATE autoschools SET $field=$value WHERE id=$id";
+        $validated = intval($value);
+        $query = "UPDATE autoschools SET $field=$validated WHERE id=$id";
         $db->setQuery($query);
         $db->query();
         if(!$db->query()) {
