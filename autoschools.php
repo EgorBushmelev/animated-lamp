@@ -133,6 +133,7 @@ class ajaxautoschools{
             else
                 echo 'null';
         }
+        exit;
     }
 
     static function get_address(){
@@ -144,6 +145,7 @@ class ajaxautoschools{
             else
                 echo 'null';
         }
+        exit;
     }
 
     static function get_phone(){
@@ -155,6 +157,7 @@ class ajaxautoschools{
             else
                 echo 'null';
         }
+        exit;
     }
 
     static function get_chiefname(){
@@ -166,6 +169,7 @@ class ajaxautoschools{
             else
                 echo 'null';
         }
+        exit;
     }
 
     static function get_deputychiefname(){
@@ -177,6 +181,7 @@ class ajaxautoschools{
             else
                 echo 'null';
         }
+        exit;
     }
 
     static function get_inn(){
@@ -188,6 +193,7 @@ class ajaxautoschools{
             else
                 echo 'null';
         }
+        exit;
     }
 
     static function get_simulators(){
@@ -199,6 +205,7 @@ class ajaxautoschools{
             else
                 echo 'null';
         }
+        exit;
     }
 }
 
