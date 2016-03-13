@@ -1,5 +1,7 @@
 <?php
 
+//something changed
+
 class users{
     static private function get_user_id(){
         $session =JFactory::getSession();
